@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    ["python3", "-I", "pointwise/pointwise_cli.py", "demo"]
+  ],
+  "verify": [
+    ["python3", "-I", "pointwise/pointwise_cli.py", "verify",
+     "--seed", "20261114", "--nodes", "2000", "--ops", "4000"]
+  ],
+  "demo": [
+    ["python3", "-I", "pointwise/pointwise_cli.py", "demo"]
+  ],
+  "bench": [
+    ["python3", "-I", "pointwise/pointwise_cli.py", "bench",
+     "--nodes", "200000", "--rounds", "200"]
+  ]
+}
